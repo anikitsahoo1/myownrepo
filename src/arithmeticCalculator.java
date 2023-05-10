@@ -54,6 +54,7 @@ public class arithmeticCalculator {
                     break;
                 }
             }
+
             catch (Exception e){
                 System.out.println("OOPS, Something went wrong. Try again...");
             }
