@@ -21,7 +21,9 @@ public class Camerarental {
                 System.out.println("----------------\nLogIn Successful\n----------------");
                 break;
             } else {
-                System.out.println("\nIncorrect ID or Password," + exit1 + " more attempts remaining");
+                System.out.println("*************************************************");
+                System.out.println("Incorrect ID or Password," + exit1 + " more attempt remaining");
+                System.out.println("*************************************************");
             }
 
         }
@@ -62,6 +64,7 @@ public class Camerarental {
                     Scanner scanner=new Scanner(System.in);
                 System.out.println("1: MY CAMERAS\n2: RENT A CAMERA\n3: VIEW ALL CAMERAS\n4: MY WALLET\n5: EXIT");
                 int choice = scanner.nextInt();
+                scanner.nextLine();
 
                 //my camera portal
                 if (choice == 1) {
@@ -71,6 +74,7 @@ public class Camerarental {
                             Scanner sc1=new Scanner(System.in);
                             System.out.println("1:ADD\n2:REMOVE\n3:VIEW MY CAMERAS\n4:GO TO PREVIOUS MENU");
                             int innerChoiceOf1 = sc1.nextInt();
+
                             if (innerChoiceOf1 == 4) {
                                 break;
                             } else if (innerChoiceOf1 == 1) {
